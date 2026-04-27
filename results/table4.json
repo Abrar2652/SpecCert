@@ -1,0 +1,95 @@
+{
+  "PROTEINS": {
+    "speccert": {
+      "dataset": "PROTEINS",
+      "method": "speccert",
+      "division": "structure",
+      "num_groups": 30,
+      "model": "GIN",
+      "div_time": 1.2600746154785156,
+      "train_time": 1654.6642644405365,
+      "test_time": 13.187864780426025,
+      "clean_acc": 0.7216216216216216,
+      "epochs": 200,
+      "lambda_c": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.15
+      ],
+      "lambda_c_used": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.15
+      ],
+      "best_variant": "seed4",
+      "n_seeds": 5,
+      "label_smoothing": 0.1
+    }
+  },
+  "ENZYMES": {
+    "speccert": {
+      "dataset": "ENZYMES",
+      "method": "speccert",
+      "division": "structure",
+      "num_groups": 30,
+      "model": "GIN",
+      "div_time": 1.034848690032959,
+      "train_time": 1707.024394750595,
+      "test_time": 5.334677696228027,
+      "clean_acc": 0.66,
+      "epochs": 200,
+      "lambda_c": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.15
+      ],
+      "lambda_c_used": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.15
+      ],
+      "best_variant": "seed0",
+      "n_seeds": 5,
+      "label_smoothing": 0.1
+    }
+  },
+  "NCI1": {
+    "speccert": {
+      "dataset": "NCI1",
+      "method": "speccert",
+      "division": "structure",
+      "num_groups": 30,
+      "model": "GIN",
+      "div_time": 3.687173366546631,
+      "train_time": 1730.690017938614,
+      "test_time": 54.209450006484985,
+      "clean_acc": 0.6671532846715329,
+      "epochs": 200,
+      "lambda_c": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.15
+      ],
+      "lambda_c_used": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.15
+      ],
+      "best_variant": "seed2",
+      "n_seeds": 5,
+      "label_smoothing": 0.1
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "speccert": {
+    "dataset": "MUTAG",
+    "method": "speccert",
+    "division": "structure",
+    "num_groups": 30,
+    "model": "GIN",
+    "div_time": 0.2524983882904053,
+    "train_time": 1401.644151687622,
+    "test_time": 1.4682517051696777,
+    "clean_acc": 0.9206349206349206,
+    "epochs": 200,
+    "lambda_c": [
+      0.0,
+      0.0,
+      0.05,
+      0.1,
+      0.15
+    ],
+    "lambda_c_used": [
+      0.0,
+      0.0,
+      0.05,
+      0.1,
+      0.15
+    ],
+    "best_variant": "ensemble",
+    "n_seeds": 5,
+    "label_smoothing": 0.1
+  }
+}
