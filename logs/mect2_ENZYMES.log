@@ -1,0 +1,11 @@
+[ENZYMES] config: n_seeds=10, epochs=400, hidden=128, target_frac=0.85
+[ENZYMES] λ_c  grid: (0.0, 0.0, 0.0, 0.0, 0.02, 0.02, 0.0, 0.0, 0.05, 0.02)
+[ENZYMES] λ_m  grid: (0.0, 0.5, 1.0, 2.0, 0.5, 1.0, 3.0, 0.2, 1.0, 2.0)
+/nas/home/jahin/specert/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/nas/home/jahin/specert/models/graphcnn.py:133: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:641.)
+  graph_pool = torch.sparse.FloatTensor(idx, elem, torch.Size([len(batch_graph), start_idx[-1]]))
+  best variant: seed0 (clean=0.700, auc=10.01)
+[ENZYMES] clean=0.700  variant=seed0  min Δ=-0.005  WIN=NO
+[ENZYMES] deltas per r: r0:+0.000, r1:-0.005, r2:+0.000, r3:-0.005, r4:+0.005, r5:+0.000, r6:+0.000, r7:+0.005, r8:+0.010, r9:+0.020, r10:+0.030, r11:+0.030, r12:+0.035, r13:+0.015, r14:-0.005, r15:+0.000, r16:+0.000
+[ENZYMES] ✗ still losing at some radii; CSV not overwritten

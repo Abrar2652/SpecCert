@@ -1,0 +1,38 @@
+
+=== FIGURES 9-12: Joint structure+feature cert (Ts=5, Tf=5) ===
+
+--- MUTAG ---
+/nas/home/jahin/specert/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/nas/home/jahin/specert/models/graphcnn.py:133: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:641.)
+  graph_pool = torch.sparse.FloatTensor(idx, elem, torch.Size([len(batch_graph), start_idx[-1]]))
+  best variant: ensemble (clean=0.746, auc=8.67)
+  saved -> /nas/home/jahin/specert/results/joint_MUTAG.npy  (shape (6, 6))
+
+--- ENZYMES ---
+/nas/home/jahin/specert/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+  best variant: ensemble (clean=0.170, auc=0.67)
+  saved -> /nas/home/jahin/specert/results/joint_ENZYMES.npy  (shape (6, 6))
+
+--- PROTEINS ---
+  best variant: ensemble (clean=0.689, auc=7.65)
+  saved -> /nas/home/jahin/specert/results/joint_PROTEINS.npy  (shape (6, 6))
+
+--- DD ---
+  best variant: ensemble (clean=0.412, auc=5.35)
+  saved -> /nas/home/jahin/specert/results/joint_DD.npy  (shape (6, 6))
+
+--- NCI1 ---
+  best variant: ensemble (clean=0.500, auc=6.50)
+  saved -> /nas/home/jahin/specert/results/joint_NCI1.npy  (shape (6, 6))
+
+--- REDDITBINARY ---
+  best variant: ensemble (clean=0.617, auc=8.03)
+  saved -> /nas/home/jahin/specert/results/joint_REDDITBINARY.npy  (shape (6, 6))
+
+--- COLLAB ---
+  best variant: ensemble (clean=0.521, auc=6.78)
+  saved -> /nas/home/jahin/specert/results/joint_COLLAB.npy  (shape (6, 6))
+
+--- DBLP_v1 ---

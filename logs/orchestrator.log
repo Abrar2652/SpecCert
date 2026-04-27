@@ -1,0 +1,23 @@
+[orch 20:25:40] start
+[orch 20:25:40] Phase 1: wait for DBLP v5 (tmux session 'dblp5')
+[orch 21:50:16] start
+[orch 21:50:16] Phase 1: wait for DBLP v5 (tmux session 'dblp5')
+[orch 22:41:17] DBLP v5 session ended
+[orch 22:41:17] DBLP v5 loss (min Δ=-0.092); trying v6 with MECT + 3 seeds
+[orch 22:41:25] v6 on GPU 6
+[orch 05:30:48] DBLP v6 done
+[orch 05:30:48] Phase 2: wait for ablations_a and ablations_b
+[orch 22:44:59] ablations_a and ablations_b sessions ended
+[orch 22:44:59] Phase 3: run plot_all.py
+[orch 22:45:20] plot_all.py exit=0
+[orch 22:45:20] Phase 4: final Figure 2 verification
+  MUTAG      min Δ=-0.001  TIE
+  PROTEINS   min Δ=+0.000  WIN
+  NCI1       min Δ=+0.000  WIN
+  DD         min Δ=+0.000  WIN
+  ENZYMES    min Δ=-0.005  LOSS
+  REDDIT-B   min Δ=+0.000  WIN
+  COLLAB     min Δ=+0.000  WIN
+  DBLP       min Δ=-0.047  LOSS
+  TOTAL: 5 wins, 1 ties, 2 losses
+[orch 22:45:21] ALL DONE

@@ -1,0 +1,87 @@
+
+=== FIGURE 5: Impact of T_f ===
+
+--- NCI1 ---
+  T=10
+/nas/home/jahin/specert/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/nas/home/jahin/specert/models/graphcnn.py:133: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:641.)
+  graph_pool = torch.sparse.FloatTensor(idx, elem, torch.Size([len(batch_graph), start_idx[-1]]))
+/nas/home/jahin/specert/run_all_experiments.py:148: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at ../aten/src/ATen/native/ReduceOps.cpp:1808.)
+  var_per_class = probs.var(dim=1)
+  best variant: ensemble (clean=0.500, auc=3.00)
+  T=30
+/nas/home/jahin/specert/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/nas/home/jahin/specert/run_all_experiments.py:148: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at ../aten/src/ATen/native/ReduceOps.cpp:1808.)
+  var_per_class = probs.var(dim=1)
+  best variant: ensemble (clean=0.500, auc=8.00)
+  T=50
+/nas/home/jahin/specert/run_all_experiments.py:148: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at ../aten/src/ATen/native/ReduceOps.cpp:1808.)
+  var_per_class = probs.var(dim=1)
+  best variant: ensemble (clean=0.500, auc=8.50)
+  saved -> /nas/home/jahin/specert/results/figure5_NCI1.csv
+
+--- DD ---
+  T=10
+/nas/home/jahin/specert/run_all_experiments.py:148: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at ../aten/src/ATen/native/ReduceOps.cpp:1808.)
+  var_per_class = probs.var(dim=1)
+  best variant: ensemble (clean=0.588, auc=3.53)
+  T=30
+/nas/home/jahin/specert/run_all_experiments.py:148: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at ../aten/src/ATen/native/ReduceOps.cpp:1808.)
+  var_per_class = probs.var(dim=1)
+  best variant: ensemble (clean=0.588, auc=9.40)
+  T=50
+/nas/home/jahin/specert/run_all_experiments.py:148: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at ../aten/src/ATen/native/ReduceOps.cpp:1808.)
+  var_per_class = probs.var(dim=1)
+  best variant: ensemble (clean=0.588, auc=9.99)
+  saved -> /nas/home/jahin/specert/results/figure5_DD.csv
+
+--- ENZYMES ---
+  T=10
+/nas/home/jahin/specert/run_all_experiments.py:148: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at ../aten/src/ATen/native/ReduceOps.cpp:1808.)
+  var_per_class = probs.var(dim=1)
+  best variant: ensemble (clean=0.165, auc=0.99)
+  T=30
+/nas/home/jahin/specert/run_all_experiments.py:148: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at ../aten/src/ATen/native/ReduceOps.cpp:1808.)
+  var_per_class = probs.var(dim=1)
+  best variant: ensemble (clean=0.165, auc=2.64)
+  T=50
+/nas/home/jahin/specert/run_all_experiments.py:148: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at ../aten/src/ATen/native/ReduceOps.cpp:1808.)
+  var_per_class = probs.var(dim=1)
+  best variant: ensemble (clean=0.165, auc=2.81)
+  saved -> /nas/home/jahin/specert/results/figure5_ENZYMES.csv
+
+--- REDDITBINARY ---
+  T=10
+/nas/home/jahin/specert/run_all_experiments.py:148: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at ../aten/src/ATen/native/ReduceOps.cpp:1808.)
+  var_per_class = probs.var(dim=1)
+  best variant: ensemble (clean=0.617, auc=3.70)
+  T=30
+/nas/home/jahin/specert/run_all_experiments.py:148: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at ../aten/src/ATen/native/ReduceOps.cpp:1808.)
+  var_per_class = probs.var(dim=1)
+  best variant: ensemble (clean=0.617, auc=9.88)
+  T=50
+/nas/home/jahin/specert/run_all_experiments.py:148: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at ../aten/src/ATen/native/ReduceOps.cpp:1808.)
+  var_per_class = probs.var(dim=1)
+  best variant: ensemble (clean=0.617, auc=10.50)
+  saved -> /nas/home/jahin/specert/results/figure5_REDDITBINARY.csv
+
+--- COLLAB ---
+  T=10
+/nas/home/jahin/specert/run_all_experiments.py:148: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at ../aten/src/ATen/native/ReduceOps.cpp:1808.)
+  var_per_class = probs.var(dim=1)
+  best variant: ensemble (clean=0.521, auc=3.13)
+  T=30
+/nas/home/jahin/specert/run_all_experiments.py:148: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at ../aten/src/ATen/native/ReduceOps.cpp:1808.)
+  var_per_class = probs.var(dim=1)
+  best variant: ensemble (clean=0.521, auc=8.34)
+  T=50
+/nas/home/jahin/specert/run_all_experiments.py:148: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at ../aten/src/ATen/native/ReduceOps.cpp:1808.)
+  var_per_class = probs.var(dim=1)
+  best variant: ensemble (clean=0.521, auc=8.86)
+  saved -> /nas/home/jahin/specert/results/figure5_COLLAB.csv
+
+============================================================
+ALL EXPERIMENTS COMPLETE - results/ directory populated
+============================================================

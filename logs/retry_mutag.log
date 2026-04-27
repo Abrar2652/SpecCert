@@ -1,0 +1,3 @@
+[MUTAG] config: {'n_seeds': 10, 'epochs': 300, 'hidden_dim': 64, 'label_smoothing': 0.1, 'lambda_c': (0.0, 0.05, 0.1, 0.15, 0.2, 0.0, 0.1, 0.2, 0.05, 0.15)}
+/nas/home/jahin/specert/models/graphcnn.py:133: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:641.)
+  graph_pool = torch.sparse.FloatTensor(idx, elem, torch.Size([len(batch_graph), start_idx[-1]]))

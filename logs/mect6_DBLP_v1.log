@@ -1,0 +1,10 @@
+[DBLP_v1] Using 128-dim pretrained embeddings from dataset/DBLP_v1/processed/dblp.npy (slice 26/26, vocab=28085)
+/nas/home/jahin/specert/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/nas/home/jahin/specert/models/graphcnn.py:133: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:641.)
+  graph_pool = torch.sparse.FloatTensor(idx, elem, torch.Size([len(batch_graph), start_idx[-1]]))
+/nas/home/jahin/specert/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+  best variant: ensemble (clean=0.906, auc=13.82)
+[DBLP v6] clean 0.906413814369411 variant ensemble
+[DBLP v6] curve: [0.906, 0.906, 0.906, 0.906, 0.906, 0.905, 0.905, 0.904, 0.902, 0.9, 0.897, 0.892, 0.885, 0.868, 0.833, 0.397, 0.0]

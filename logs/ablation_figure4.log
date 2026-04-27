@@ -1,0 +1,57 @@
+
+=== FIGURE 4: Impact of T_s ===
+
+--- NCI1 ---
+  T=10
+/nas/home/jahin/specert/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/nas/home/jahin/specert/models/graphcnn.py:133: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:641.)
+  graph_pool = torch.sparse.FloatTensor(idx, elem, torch.Size([len(batch_graph), start_idx[-1]]))
+  best variant: ensemble (clean=0.664, auc=3.50)
+  T=30
+/nas/home/jahin/specert/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+  best variant: ensemble (clean=0.664, auc=10.10)
+  T=50
+  best variant: ensemble (clean=0.666, auc=11.26)
+  saved -> /nas/home/jahin/specert/results/figure4_NCI1.csv
+
+--- DD ---
+  T=10
+  best variant: ensemble (clean=0.766, auc=4.13)
+  T=30
+  best variant: ensemble (clean=0.768, auc=11.83)
+  T=50
+  best variant: ensemble (clean=0.768, auc=13.06)
+  saved -> /nas/home/jahin/specert/results/figure4_DD.csv
+
+--- ENZYMES ---
+  T=10
+  best variant: ensemble (clean=0.290, auc=1.43)
+  T=30
+  best variant: ensemble (clean=0.335, auc=5.04)
+  T=50
+  best variant: ensemble (clean=0.405, auc=6.89)
+  saved -> /nas/home/jahin/specert/results/figure4_ENZYMES.csv
+
+--- REDDITBINARY ---
+  T=10
+  best variant: ensemble (clean=0.745, auc=4.15)
+  T=30
+  best variant: ensemble (clean=0.747, auc=11.58)
+  T=50
+  best variant: ensemble (clean=0.747, auc=12.66)
+  saved -> /nas/home/jahin/specert/results/figure4_REDDITBINARY.csv
+
+--- COLLAB ---
+  T=10
+  best variant: ensemble (clean=0.733, auc=3.97)
+  T=30
+  best variant: ensemble (clean=0.770, auc=11.51)
+  T=50
+  best variant: ensemble (clean=0.728, auc=12.01)
+  saved -> /nas/home/jahin/specert/results/figure4_COLLAB.csv
+
+============================================================
+ALL EXPERIMENTS COMPLETE - results/ directory populated
+============================================================

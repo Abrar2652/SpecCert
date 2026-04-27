@@ -1,0 +1,4 @@
+[watchdog] start Sun Apr 19 05:18:47 AM UTC 2026
+[watchdog 05:18:55] NCI1 crashed; relaunching on GPU 5
+[watchdog 05:19:03] ENZYMES crashed; relaunching on GPU 5
+[watchdog 05:19:12] DBLP_v1 crashed; relaunching on GPU 5

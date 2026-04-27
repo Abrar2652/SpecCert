@@ -1,0 +1,5 @@
+/nas/home/jahin/specert/models/graphcnn.py:133: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:641.)
+  graph_pool = torch.sparse.FloatTensor(idx, elem, torch.Size([len(batch_graph), start_idx[-1]]))
+[MUTAG] clean=0.905 cert@0=0.905 cert@5=0.905 cert@10=0.905 cert@14=0.905
+[ENZYMES] clean=0.685 cert@0=0.685 cert@5=0.675 cert@10=0.635 cert@14=0.530
+[PROTEINS] clean=0.716 cert@0=0.716 cert@5=0.703 cert@10=0.681 cert@14=0.616

@@ -1,0 +1,75 @@
+
+=== FIGURE 8: Impact of GNN architecture (SpecCert) ===
+
+--- MUTAG ---
+  arch=GIN
+/nas/home/jahin/specert/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/nas/home/jahin/specert/models/graphcnn.py:133: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:641.)
+  graph_pool = torch.sparse.FloatTensor(idx, elem, torch.Size([len(batch_graph), start_idx[-1]]))
+  best variant: ensemble (clean=0.905, auc=14.00)
+  arch=GCN
+/nas/home/jahin/specert/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+  best variant: ensemble (clean=0.905, auc=14.19)
+  arch=GAT
+  best variant: ensemble (clean=0.921, auc=14.40)
+  saved -> /nas/home/jahin/specert/results/figure8_MUTAG.csv
+
+--- PROTEINS ---
+  arch=GIN
+  best variant: ensemble (clean=0.716, auc=10.85)
+  arch=GCN
+  best variant: ensemble (clean=0.716, auc=11.03)
+  arch=GAT
+  best variant: ensemble (clean=0.705, auc=10.53)
+  saved -> /nas/home/jahin/specert/results/figure8_PROTEINS.csv
+
+--- NCI1 ---
+  arch=GIN
+  best variant: ensemble (clean=0.665, auc=10.02)
+  arch=GCN
+  best variant: ensemble (clean=0.668, auc=10.13)
+  arch=GAT
+  best variant: ensemble (clean=0.658, auc=10.00)
+  saved -> /nas/home/jahin/specert/results/figure8_NCI1.csv
+
+--- DD ---
+  arch=GIN
+  best variant: ensemble (clean=0.763, auc=11.75)
+  arch=GCN
+  best variant: ensemble (clean=0.766, auc=11.54)
+  arch=GAT
+  best variant: ensemble (clean=0.753, auc=11.72)
+  saved -> /nas/home/jahin/specert/results/figure8_DD.csv
+
+--- ENZYMES ---
+  arch=GIN
+  best variant: ensemble (clean=0.340, auc=5.11)
+  arch=GCN
+  best variant: ensemble (clean=0.350, auc=5.13)
+  arch=GAT
+  best variant: ensemble (clean=0.370, auc=5.55)
+  saved -> /nas/home/jahin/specert/results/figure8_ENZYMES.csv
+
+--- REDDITBINARY ---
+  arch=GIN
+  best variant: ensemble (clean=0.749, auc=11.66)
+  arch=GCN
+  best variant: ensemble (clean=0.752, auc=11.62)
+  arch=GAT
+  best variant: ensemble (clean=0.738, auc=11.48)
+  saved -> /nas/home/jahin/specert/results/figure8_REDDITBINARY.csv
+
+--- COLLAB ---
+  arch=GIN
+  best variant: ensemble (clean=0.772, auc=11.60)
+  arch=GCN
+  best variant: ensemble (clean=0.676, auc=10.33)
+  arch=GAT
+  best variant: ensemble (clean=0.719, auc=11.12)
+  saved -> /nas/home/jahin/specert/results/figure8_COLLAB.csv
+
+============================================================
+ALL EXPERIMENTS COMPLETE - results/ directory populated
+============================================================

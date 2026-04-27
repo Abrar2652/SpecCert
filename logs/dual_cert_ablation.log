@@ -1,0 +1,41 @@
+
+=== Dual-cert ablation: MUTAG ===
+/nas/home/jahin/specert/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/nas/home/jahin/specert/models/graphcnn.py:133: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:641.)
+  graph_pool = torch.sparse.FloatTensor(idx, elem, torch.Size([len(batch_graph), start_idx[-1]]))
+  best variant: ensemble (clean=0.921, auc=14.22)
+  saved -> /nas/home/jahin/specert/results/dualcert_ablation_MUTAG.csv
+  r=14 std=0.857  weighted=0.000  or=0.857
+
+=== Dual-cert ablation: PROTEINS ===
+/nas/home/jahin/specert/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+  best variant: ensemble (clean=0.716, auc=10.53)
+  saved -> /nas/home/jahin/specert/results/dualcert_ablation_PROTEINS.csv
+  r=14 std=0.584  weighted=0.000  or=0.584
+
+=== Dual-cert ablation: NCI1 ===
+  best variant: ensemble (clean=0.664, auc=10.18)
+  saved -> /nas/home/jahin/specert/results/dualcert_ablation_NCI1.csv
+  r=14 std=0.627  weighted=0.000  or=0.627
+
+=== Dual-cert ablation: DD ===
+  best variant: ensemble (clean=0.774, auc=11.68)
+  saved -> /nas/home/jahin/specert/results/dualcert_ablation_DD.csv
+  r=14 std=0.715  weighted=0.000  or=0.715
+
+=== Dual-cert ablation: ENZYMES ===
+  best variant: ensemble (clean=0.665, auc=9.47)
+  saved -> /nas/home/jahin/specert/results/dualcert_ablation_ENZYMES.csv
+  r=14 std=0.560  weighted=0.000  or=0.560
+
+=== Dual-cert ablation: REDDITBINARY ===
+  best variant: ensemble (clean=0.738, auc=11.40)
+  saved -> /nas/home/jahin/specert/results/dualcert_ablation_REDDITBINARY.csv
+  r=14 std=0.689  weighted=0.000  or=0.689
+
+=== Dual-cert ablation: COLLAB ===
+  best variant: ensemble (clean=0.787, auc=11.30)
+  saved -> /nas/home/jahin/specert/results/dualcert_ablation_COLLAB.csv
+  r=14 std=0.632  weighted=0.000  or=0.632
